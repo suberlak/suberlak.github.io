@@ -631,7 +631,12 @@ input[type="radio"] + label:before {
 	display: inline-block;
 	position: relative;
 }
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 	.image:before {
 		pointer-events: none;
 		background-image: url("../../images/overlay.png");
