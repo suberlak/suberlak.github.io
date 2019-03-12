@@ -1,0 +1,208 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+\usepackage{helvet} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+\setlength{\textwidth}{6.2in} % set width of text portion
+\newcommand{\code}[1]{\texttt{#1}}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=blue           % color of external links
+}
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\textsc{\Large Krzysztof Suberlak}}
+ \moveleft.5\hoffset\centerline{Curriculum Vitae}
+
+% Draw a horizontal line the whole width of resume:
+%\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+% \moveleft.5\hoffset\centerline{Email: \href{mailto:suberlak@uw.edu}{suberlak@uw.edu}}
+% \moveleft.5\hoffset\centerline{Website: \url{http://suberlak.github.io/}}
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}
+
+\hspace{-1in}
+\begin{minipage}[t]{0.95\resumewidth}
+Email: \href{mailto:suberlak@uw.edu}{suberlak@uw.edu} \hfill GitHub: \href{https://github.com/suberlak}{suberlak}\\
+Web: \url{suberlak.github.io/} \hfill 
+Mobile: 206-915-9093
+\end{minipage}
+%% Select character to use as the bullet marker. 
+%% Comment out to get normal dark filled circle bullets
+\def\labelitemi{--}	
+
+\begin{resume}
+
+\section{Interests} Astrostatistics and data mining. I study how properties of the engine of active galactic nuclei, such as black hole mass, or accretion disk luminosity, correlate with the Damped Random Walk parametrization.
+
+%\section{References}
+%Dr.~Mario Juri\'c 609-933-1033 \href{mailto:mjuric@astro.washington.edu}{mjuric@astro.washington.edu}\\
+%Dr.~Andy Connolly 206-543-9541 \href{mailto:ajc@astro.washington.edu}{ajc@astro.washington.edu}\\
+%Dr.~Colin Slater 206-685-9017 \href{mailto:ctslater@uw.edu}{ctslater@uw.edu}  
+
+
+\section{Education} 
+University of Washington, Seattle, WA \hfill 2013 -- present\\
+PhD Candidate in Astronomy
+
+University of Oxford, UK \hfill 2008 -- 2012\\
+MPhys Physics  
+
+\section{Computer skills}
+\textbf{Python} open data science stack (NumPy, SciPy, AstroPy, Pandas, Matplotlib, Scikit-learn, iPython, Jupyter-Lab, AstroML, etc.); 
+Github (\textbf{version control});
+\textbf{UNIX / Linux} based systems;
+\textbf{LSST science pipelines} (LSST "Stack"); 
+Database manipulation: \textbf{SQL}, Apache-Spark, AXS, Dask, LSD; 
+Collaboration tools: \textbf{Jira}, \textbf{Confluence}, Docushare, \textbf{LaTeX}, Zenodo.
+
+
+\section{Selected \\Graduate \\Research} 
+{\sl LSST Crowded Fields}:  testing the LSST Stack performance  \hfill          2018\\
+Comparing the results of LSST Stack performance to the state-of-the-art DECAPS pipeline. 
+\begin{itemize}  \itemsep -2pt %reduce space between items
+\item Developed data processing pipeline, analyzed the results 
+\item Made recommendations for photometric accuracy and astrometric precision in DMTN077 ``\href{https://dmtn-077.lsst.io}{LSST Fall 2017 Crowded Fields Testing}''
+\end{itemize}  
+
+{\sl LSST PDAC}: user testing the Prototype Data Access Center \hfill            2017\\
+\begin{itemize}  \itemsep -1pt 
+\item tested the functionality of PDAC, as part of DM-SST
+\item made recommendations for the DM-SST team during telecons, and summarized in the report DMTR022 ``\href{https://ls.st/DMTR-22}{Prototype Data Access Center: User Report}'' 
+\end{itemize}
+
+
+
+{\sl eScience Data Science for Social Good} \hfill Jun 2015 -- Aug 2015\\
+ Summer work at the University of Washington eScience Institute, working Dr. Ariel Rokem and Dr. Bryna Hazelton  on a Gates Foundation  ``\href{https://escience.washington.edu/get-involved/data-science-for-social-good/dssg-project-summaries-15}{Predictors of Permanent Housing for Homeless Families}''
+\begin{itemize}  \itemsep -1pt 
+\item cleaned the heterogeneous datasets describing homeless shelters in King, Pierce and Snohomish counties
+\item developed python code to define families based on \href{https://uwescience.github.io/DSSG2015-predicting-permanent-housing/2015-07-27-chris-galaxy-clusters/}{hierarchical clustering} involving coincidence of entry times and IDs 
+\end{itemize}
+
+
+
+\section{Employment} 
+
+{\sl University of Washington, Research Assistantship} \hfill           Jan 2016 -- present\\ Graduate Research Assistantship with Dr. \v{Z}eljko Ivezi\'c 
+
+
+{\sl University of Washington, Teaching Assistantship} \hfill           Oct 2013 -- Dec 2015 \\ Graduate Teaching Assistantship
+
+
+{\sl Nicolaus Copernicus Astronomical Center, Poland, Research Associate} \hfill Feb 2013 -- Jul 2013 \\ Research with Dr. Agata Rozanska
+\begin{itemize}
+	\item Measured Active Galactic Nuclei spectra from the VIMOS Public Extragalactic Redshift Survey
+	\item Improved classification scheme and data reduction software
+\end{itemize}
+
+
+{\sl University of Oxford, Research Studentship} \hfill Oct 2012 -- Dec 2012 \\ Research with Dr. Leigh Fletcher and Prof. Pat Irwin
+\begin{itemize}
+	\item Analyzed the infrared data of Jupyter atmosphere from Cassini 
+	\item Verified the possible  depth of measurement using ethane spectral lines.
+\end{itemize}
+
+{\sl University College of London, Nuffield Fellowship} \hfill   Jun 2011 -- Aug 2011 \\
+Undergraduate Research at the Mullard Space Science Laboratory, UK, with  Prof Andrew Coates and  Dr Adam Masters
+\begin{itemize}%  \itemsep -2pt %reduce space between items
+\item Analyzed the location of Saturn’s ‘plasmapause’ using Cassini Plasma Spectrometer (CAPS) Electron Spectrometer (ELS) data” 
+\end{itemize}
+
+
+
+
+
+\section{Under-\\graduate\\Research} 
+{\sl University of Oxford, AOPP Research Assistantship} \hfill            Jun 2011 -- Aug 2011 \\
+Summer research experience with Dr. Neil Bowles and Dr. Ian Thomas  at the University of Oxford Oceanic and Planetary Physics sub-department
+\begin{itemize}%  \itemsep -2pt %reduce space between items
+\item Performed laboratory measurements and data analysis supporting the Diviner instrument on the Lunar Reconnaissance Orbiter
+\item Determined the grain size distribution of the lunar soil equivalent, to aid modelling of thermal emission of lunar regolith
+\end{itemize}  
+
+
+
+{\sl University of Oxford,  Masters Thesis} \hfill            Jan 2012 -- Apr 2012 \\
+Measuring Expansion of the Universe with Supernovae with Dr.Fraser Clarke and Dr. Mark Sullivan
+\begin{itemize}
+\item Observed, reduced, and analysed data for new supernovae
+\item Measured the Hubble constant with lightcurve fitting software 
+\end{itemize} 
+
+
+{\sl Nicolaus Copernicus Astronomical Center, Warsaw, Poland}  \hfill   Jun 2012 -- Aug 2012 \\
+Research at the Polish Academy of Sciences with Dr. Agata R\'{o}\.{z}a\'{n}ska
+\begin{itemize}
+	\item Analyzed Chandra x-ray data with CIAO, performed  spectroscopy and imaging of Sagittarius A*
+	\item Investigated the spectroscopy of x-ray filaments, and examined the morphology of the region in various energy bands to find the sources of emission.
+\end{itemize}
+
+
+
+\section{Publications}
+\begin{itemize}   
+\item \textbf{Suberlak, K.L.}, Ivezi\'c, \v{Z}., MacLeod, C.L., Graham, M., Branimir, S. ``\href{https://doi.org/10.1093/mnras/stx2310}{Solving the puzzle of discrepant quasar variability on monthly time-scales implied by SDSS and CRTS data sets}.'' Monthly Notices of the Royal Astronomical Society, Volume 472, Issue 4, p.4870-4877 (2017)
+
+\end{itemize}
+
+
+
+\section{Honors\\And\\Awards} 
+\begin{itemize}  
+\item University of Washington eScience Institute \href{https://escience.washington.edu/dssg/}{Data Science for Social Good Fellow} (2015-present)
+
+\item Data Intensive Research in Astrophysics and Cosmology (DIRAC) at the University of Washington: \href{https://dirac.astro.washington.edu}{DIRAC Institute Fellow }(2016-present) 
+ 
+\item Astrobiology Fellow, University of Washington, 2013-2014. \\
+\end{itemize}
+                 
+
+
+
+
+\section{Professional\\ Presentations} 
+\begin{itemize}  %\itemsep -5pt %reduce space between items
+
+\item Poster:    Astrophysical Frontiers in the Next Decade and Beyond: Planets, Galaxies, Black Holes,~\& the Transient Universe. Portland, OR. June 26, 2018 
+
+\item Poster: ``Bayesian inference in forced photometry'' at \href{http://myweb.facstaff.wwu.edu/~davenpj3/nwam2016/}{Northwest Astronomy Meeting}, Bellinham, WA. Oct 29, 2016 
+
+\item Poster: ``What to do with negative fluxes?'' at the intermediate Palomar Transient Factory (iPTF) Summer School, California Institute of Technology.  Pasadena, CA. July 18, 2016
+
+\item Poster: ``\href{http://adsabs.harvard.edu/abs/2016AAS...22724335S}{Solving the puzzle of discrepant quasar variability on monthly time scales implied by SDSS and CRTS datasets}.'' 227\textsuperscript{th} American Astronomical Society Meeting. Kissimmee, FL. January 6, 2016.
+
+\item Poster: ``\href{http://adsabs.harvard.edu/abs/2015AAS...22514464S}{New Constraints on Quasar Variability based on 8,000 SDSS Stripe 82 Quasars with both SDSS and CRTS Lightcurve Data}.'' 225\textsuperscript{th} American Astronomical Society Meeting. Seattle, WA. January 6, 2015.
+
+\end{itemize}
+
+
+\section{Workshops and Conferences}
+\begin{itemize}
+
+    \item LSST 2017 Project and Community Workshop. Tucson, AZ. Aug 14-18, 2017
+
+	\item \href{http://www.cvent.com/events/detecting-the-unexpected-discovery-in-the-era-of-astronomically-big-data/event-summary-0db6808d548b4a9ea6466b43046a1ff5.aspx}{Detecting the Unexpected: Discovery in the Era of Astronomically Big Data}. Space Telescope Science Institute, Baltimore, MD. Feb 27 - March 2, 2017 
+
+	\item \href{https://www.imprs-hd.mpg.de/147422/Summer-School-2016}{Summer School 2016 Astrostatistics \& Data Mining}. International Max Planck Research School for Astronomy \& Cosmic Physics at the University of Heidelberg, Germany. Sept 12-16, 2016
+
+\end{itemize}
+
+
+\section{Teaching \\Experience}
+\begin{itemize}   
+	
+\item ASTR150 The Planets: Teaching assistant for  three quarters (Winter 2013, Summer 2014 for Dr Nicole Silvestri; Spring 2015 for Dr Toby Smith)
+
+\item ASTR101 Introduction to Astronomy: Teaching assistant for  eight quarters (Fall 2013, Fall 2015, Summer 2016, Autumn 2016 for Dr Ana Larson ; Spring 2014, Spring 2016 for Dr Chris Laws; Winter 2015, Winter 2016 for Dr Oliver Fraser) \\
+\end{itemize}
+
+
+
+\vfill \hfill {\small Last updated: \today}
+\end{resume}
+\end{document}
